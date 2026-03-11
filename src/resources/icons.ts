@@ -1,9 +1,12 @@
 import type { IconType } from "react-icons";
+import { AiTwotoneMail } from "react-icons/ai";
 import {
 	PiBriefcaseDuotone,
 	PiFileTextDuotone,
+	PiGithubLogoDuotone,
 	PiHouseDuotone,
 	PiImageDuotone,
+	PiLinkedinLogoDuotone,
 	PiMoonLight,
 	PiSun,
 	PiUserDuotone,
@@ -17,4 +20,7 @@ export const iconLibrary: Record<string, IconType> = {
 	gallery: PiImageDuotone,
 	moon: PiMoonLight,
 	sun: PiSun,
+	github: PiGithubLogoDuotone,
+	linkedin: PiLinkedinLogoDuotone,
+	email: AiTwotoneMail,
 };
