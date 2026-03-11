@@ -1,2 +1,31 @@
-
 @import "tailwindcss";
+
+@theme {
+
+  --background-image-radiant-top: radial-gradient(
+    circle at top center, 
+    var(--color-red-900 / 0.2) 0%, 
+    transparent 80%
+  );
+  /* Define Keyframes for the 'Normal' 9s interval */
+  @keyframes shine-default {
+    0% { left: -100%; opacity: 0; }
+    1% { left: -100%; opacity: 1; }
+    15% { left: 100%; opacity: 1; }
+    16% { opacity: 0; left: 100%; }
+    100% { left: -100%; opacity: 0; }
+  }
+
+  /* Define Keyframes for the 'Hover' 3s interval */
+  @keyframes shine-hover {
+    0% { left: -100%; opacity: 0; }
+    1% { left: -100%; opacity: 1; }
+    45% { left: 100%; opacity: 1; }
+    46% { opacity: 0; left: 100%; }
+    100% { left: -100%; opacity: 0; }
+  }
+
+  /* Register the animations as utility classes */
+  --animate-shine-default: shine-default 9s ease-in-out infinite;
+  --animate-shine-hover: shine-hover 3s ease-in-out infinite;
+}

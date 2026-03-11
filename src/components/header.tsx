@@ -26,7 +26,7 @@ const pages = [
 ];
 export default function Header() {
 	return (
-		<header className="fixed md:sticky bottom-0 md:top-0 z-10 px-4 backdrop-blur-lg w-full mt-5 h-20">
+		<header className="fixed bottom-0 md:top-0 z-10 px-4 backdrop-blur-lg w-full h-20">
 			<nav className="flex items-center justify-center gap-x-2 bg-white absolute left-1/2 bottom-0 -translate-y-1/2 -translate-x-1/2 px-4 py-2 rounded-full shadow-lg border border-gray-200">
 				<Link
 					to="/"
