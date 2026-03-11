@@ -1,4 +1,4 @@
-import { iconLibrary } from "../resources/icons";
+import { iconLibrary } from "@/resources/icons";
 
 const socials = [
 	{

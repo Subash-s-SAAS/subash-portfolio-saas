@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { iconLibrary } from "../resources/icons";
+import { iconLibrary } from "@/resources/icons";
 import ThemeToggle from "./ThemeToggle";
 
 const pages = [

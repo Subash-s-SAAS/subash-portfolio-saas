@@ -1,4 +1,5 @@
-import { FlashBadge } from "../shared";
+import { FlashBadge } from "@/components/shared";
+import { homePage } from "@/resources";
 
 const Hero = () => {
 	return (
@@ -8,14 +9,16 @@ const Hero = () => {
   from-blue-500/20 to-transparent py-10 md:py-20"
 		>
 			<FlashBadge />
-			<h1 className="text-4xl md:text-7xl font-bold px-5 md:px-40 text-center leading-10 md:leading-20">
-				Building bridges between design and code
-			</h1>
-			<p className="text-xl md:text-2xl px-5 md:px-40 text-center text-olive-600">
-				I'm Subash, a <span className="font-semibold">Software Engineer</span>{" "}
-				based in India. I craft innovative solutions to complex problems. After
-				hours, I build my own projects.
-			</p>
+			{homePage.hero.heroTitle && (
+				<h1 className="text-4xl md:text-7xl font-bold px-5 md:px-40 text-center leading-10 md:leading-20">
+					{homePage.hero.heroTitle}
+				</h1>
+			)}
+			{homePage.hero.heroDescription && (
+				<p className="text-xl md:text-2xl px-5 md:px-40 text-center text-olive-600">
+					{homePage.hero.heroDescription}
+				</p>
+			)}
 		</section>
 	);
 };
