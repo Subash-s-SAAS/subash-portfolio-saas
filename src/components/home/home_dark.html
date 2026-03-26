@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Subash Thatheuse // ARCHITECT_OS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#690005",
+              "error": "#ffb4ab",
+              "primary-container": "#0ea5e9",
+              "surface-tint": "#89ceff",
+              "on-surface-variant": "#bec8d2",
+              "primary-fixed": "#c9e6ff",
+              "outline": "#88929b",
+              "secondary-fixed": "#d5e3fd",
+              "surface-container-highest": "#2d3449",
+              "secondary": "#b9c7e0",
+              "surface-container-lowest": "#060e20",
+              "on-secondary-fixed": "#0d1c2f",
+              "surface": "#0b1326",
+              "secondary-fixed-dim": "#b9c7e0",
+              "secondary-container": "#3c4a5e",
+              "inverse-primary": "#006591",
+              "surface-bright": "#31394d",
+              "primary-fixed-dim": "#89ceff",
+              "error-container": "#93000a",
+              "tertiary-container": "#de8712",
+              "on-secondary": "#233144",
+              "tertiary-fixed-dim": "#ffb86e",
+              "primary": "#89ceff",
+              "on-tertiary-container": "#4d2b00",
+              "on-surface": "#dae2fd",
+              "on-error-container": "#ffdad6",
+              "surface-variant": "#2d3449",
+              "surface-dim": "#0b1326",
+              "on-primary": "#00344d",
+              "on-background": "#dae2fd",
+              "inverse-on-surface": "#283044",
+              "on-primary-fixed": "#001e2f",
+              "inverse-surface": "#dae2fd",
+              "tertiary": "#ffb86e",
+              "on-primary-fixed-variant": "#004c6e",
+              "surface-container-high": "#222a3d",
+              "surface-container-low": "#131b2e",
+              "surface-container": "#171f33",
+              "on-tertiary-fixed": "#2c1600",
+              "on-secondary-fixed-variant": "#3a485c",
+              "tertiary-fixed": "#ffdcbd",
+              "on-tertiary": "#492900",
+              "on-secondary-container": "#abb9d2",
+              "outline-variant": "#3e4850",
+              "on-tertiary-fixed-variant": "#693c00",
+              "on-primary-container": "#003751",
+              "background": "#0b1326"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { background-color: #0b1326; color: #dae2fd; font-family: 'Manrope', sans-serif; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .glass-panel { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200/15 dark:border-slate-800/15 flex justify-between items-center px-8 h-16 max-w-full">
+<div class="text-xl font-black tracking-tighter text-slate-900 dark:text-slate-50">ARCHITECT_OS</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Manrope'] tracking-tight font-bold uppercase text-xs text-sky-600 dark:text-sky-400 border-b-2 border-sky-600 dark:border-sky-400 pb-1" href="#">Home</a>
+<a class="font-['Manrope'] tracking-tight font-bold uppercase text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#experience">Experience</a>
+<a class="font-['Manrope'] tracking-tight font-bold uppercase text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#projects">Projects</a>
+<a class="font-['Manrope'] tracking-tight font-bold uppercase text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#blog">Blog</a>
+<a class="font-['Manrope'] tracking-tight font-bold uppercase text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">dark_mode</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">terminal</button>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center px-8 md:px-24 bg-surface relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_30%,#89ceff22_0%,transparent_50%)]"></div>
+</div>
+<div class="max-w-5xl z-10">
+<span class="font-label text-primary uppercase tracking-[0.3em] text-sm mb-6 block">Subash Thatheuse // System Architect</span>
+<h1 class="font-headline text-5xl md:text-8xl font-extrabold tracking-tighter text-on-surface leading-tight mb-8">
+                    ARCHITECTING <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">HIGH-PERFORMANCE</span> <br/>
+                    DIGITAL SOLUTIONS
+                </h1>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="bg-primary text-on-primary px-8 py-4 rounded font-bold uppercase tracking-widest text-xs hover:bg-primary-container transition-all active:scale-95">Explore Projects</button>
+<button class="border border-outline-variant/20 text-primary px-8 py-4 rounded font-bold uppercase tracking-widest text-xs hover:bg-surface-container-high transition-all active:scale-95">View Blueprint</button>
+</div>
+</div>
+<div class="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-outline-variant/10 pt-12">
+<div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-2">Current Latency</p>
+<p class="font-label text-2xl text-primary">04ms</p>
+</div>
+<div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-2">Uptime Status</p>
+<p class="font-label text-2xl text-tertiary">99.99%</p>
+</div>
+<div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-2">Systems Engineered</p>
+<p class="font-label text-2xl text-on-surface">24+</p>
+</div>
+<div>
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-2">Framework Authority</p>
+<p class="font-label text-2xl text-on-surface">L7 // GAD // OBO</p>
+</div>
+</div>
+</section>
+<!-- About & Experience -->
+<section class="py-24 px-8 md:px-24 bg-surface-container-low" id="experience">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5">
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-8">ENGINEERING THE NEXT ERA</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8 body-lg">
+                        Strategic architect with a focus on mission-critical infrastructures. My approach combines the rigor of classical engineering with the agility of modern cloud-native patterns. Specializing in high-concurrency systems and distributed ledger ecosystems.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary">developer_board</span>
+<div>
+<h4 class="font-bold text-on-surface text-sm uppercase tracking-wider">Technical Mastery</h4>
+<div class="flex flex-wrap gap-2 mt-3">
+<span class="font-label text-[10px] bg-surface-container-highest text-primary px-3 py-1 uppercase border border-primary/10">Rust</span>
+<span class="font-label text-[10px] bg-surface-container-highest text-primary px-3 py-1 uppercase border border-primary/10">Go</span>
+<span class="font-label text-[10px] bg-surface-container-highest text-primary px-3 py-1 uppercase border border-primary/10">Kubernetes</span>
+<span class="font-label text-[10px] bg-surface-container-highest text-primary px-3 py-1 uppercase border border-primary/10">AWS Lambda</span>
+<span class="font-label text-[10px] bg-surface-container-highest text-primary px-3 py-1 uppercase border border-primary/10">Terraform</span>
+<span class="font-label text-[10px] bg-surface-container-highest text-primary px-3 py-1 uppercase border border-primary/10">GraphQL</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-4">
+<!-- Litmus7 -->
+<div class="bg-surface p-8 border-l-4 border-primary group hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Senior Solutions Architect</h3>
+<p class="font-label text-sm text-primary uppercase">Litmus7</p>
+</div>
+<span class="font-label text-xs text-on-surface-variant">2021 — PRESENT</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Pioneering omni-channel experiences for Tier-1 retailers. Focused on headless commerce migration and real-time inventory synchronicity at scale.</p>
+</div>
+<!-- Gadgeon -->
+<div class="bg-surface p-8 border-l-4 border-outline-variant/30 group hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Lead Systems Engineer</h3>
+<p class="font-label text-sm text-primary uppercase">Gadgeon</p>
+</div>
+<span class="font-label text-xs text-on-surface-variant">2018 — 2021</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Industrial IoT integration and embedded systems architecture. Developed low-latency data pipelines for smart factory environments.</p>
+</div>
+<!-- OBO Technology -->
+<div class="bg-surface p-8 border-l-4 border-outline-variant/30 group hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Full Stack Developer</h3>
+<p class="font-label text-sm text-primary uppercase">OBO Technology</p>
+</div>
+<span class="font-label text-xs text-on-surface-variant">2016 — 2018</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Building scalable web applications and RESTful services using modern JavaScript ecosystems and cloud-first methodologies.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Project Gallery (Bento Grid) -->
+<section class="py-24 px-8 md:px-24 bg-surface" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="font-label text-primary text-xs uppercase tracking-[0.2em] mb-4 block">Deployment Log</span>
+<h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface">SYSTEM ARCHIVES</h2>
+</div>
+<div class="font-label text-on-surface-variant text-xs uppercase">Filter: [All Systems Active]</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Project 1 -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-high h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Abstract 3D visualization of interconnected digital nodes and data flow in deep blue and glowing cyan colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA18s-Kqu5WN-mv1hkqvYrSE-bR5fBCzSr9ZO3zpUtGiwWXYoUYiBTy93Aest-mO5iDg8_Xpt8VUVkEykbK2Ys_aowc5TIIsUg_Wqa1Rvo4ILT6M4EpLTtCCzIqBp96GFBfYRAkw5shAop-pA_2FOhKpNeTW-wGcm5_VMiLx7myFJEqU15YAWgGafMx3lsjuPhbG3GZqDkNFKCrO_5KgnX1c6nt9Xbl5RdmztE--LH88MYnMfvPLn6WMlTBUlr0atp6sFSE2W9k46k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-12">
+<span class="font-label text-xs text-primary mb-2 block uppercase tracking-widest">Fintech // Infrastructure</span>
+<h3 class="font-headline text-3xl font-extrabold text-on-surface mb-4">Omni-Channel Payment Gateway</h3>
+<p class="text-on-surface-variant max-w-md mb-6">A distributed, fault-tolerant payment processing engine handling 5k+ TPS with sub-100ms latency across global clusters.</p>
+<div class="flex gap-4">
+<span class="font-label text-[10px] text-on-surface border border-outline-variant/30 px-3 py-1 uppercase">Go</span>
+<span class="font-label text-[10px] text-on-surface border border-outline-variant/30 px-3 py-1 uppercase">Kafka</span>
+<span class="font-label text-[10px] text-on-surface border border-outline-variant/30 px-3 py-1 uppercase">Postgres</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="md:col-span-4 group relative overflow-hidden bg-surface-container-high h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" data-alt="Sleek high-tech server room with glowing green and blue led lights on racks dark atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXHv-AL0n_QnV-2wUt7csHS_R938biUh7LUGAjjskaMNbv9HQ1IYomgYuKh8SqFPOpMURKjl-USgJykJ6KivB7E_viN5iiLGVo-QzrsPJjXp2isYOpTv18k8S_6XPFkHu0TgBoHIQuczBpzBwLRJ7vGr_fSYL0ukxnmCIAxG_o4ttBe5Txprz9wLAA79l3L58co5jBHp4OturUn5CGKFdv1g6xolWHKiO8vs-CttlQQJd1cUsQ68Myig21OChicXy9TyjSV-iHZbc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="font-label text-xs text-primary mb-2 block uppercase tracking-widest">E-Commerce // Core</span>
+<h3 class="font-headline text-2xl font-extrabold text-on-surface mb-4">Modular Headless Engine</h3>
+<p class="text-on-surface-variant text-sm mb-6">Event-driven microservices architecture for massive retail operations.</p>
+<div class="flex gap-4">
+<span class="font-label text-[10px] text-on-surface border border-outline-variant/30 px-3 py-1 uppercase">Next.js</span>
+<span class="font-label text-[10px] text-on-surface border border-outline-variant/30 px-3 py-1 uppercase">Redis</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-24 px-8 md:px-24 bg-surface-container-lowest" id="blog">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-center gap-4 mb-16">
+<div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+<h2 class="font-label text-primary text-xs uppercase tracking-[0.4em]">Technical Journal</h2>
+<div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Post 1 -->
+<article class="group">
+<p class="font-label text-[10px] text-on-surface-variant mb-4 uppercase">Archive 04.22 // Serverless</p>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Scaling Next.js on AWS Lambda</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Deep dive into cold-start optimization and state management in transient environments.</p>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:gap-4 transition-all" href="#">
+                            Read Entry <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</article>
+<!-- Post 2 -->
+<article class="group">
+<p class="font-label text-[10px] text-on-surface-variant mb-4 uppercase">Archive 03.15 // Rust</p>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">Memory Safety as a Feature</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Why we migrated our critical networking stack to Rust and the performance gains observed.</p>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:gap-4 transition-all" href="#">
+                            Read Entry <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</article>
+<!-- Post 3 -->
+<article class="group">
+<p class="font-label text-[10px] text-on-surface-variant mb-4 uppercase">Archive 02.01 // Design</p>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-4 group-hover:text-primary transition-colors">The Architect's UI Pattern</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Applying architectural rigor to interface design for technical personas.</p>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:gap-4 transition-all" href="#">
+                            Read Entry <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</article>
+</div>
+</div>
+</section>
+<!-- Newsletter / Contact -->
+<section class="py-24 px-8 md:px-24 bg-surface border-t border-outline-variant/10" id="contact">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface mb-6 uppercase">Initialize Connection</h2>
+<p class="text-on-surface-variant body-lg mb-12">Available for strategic consulting and technical leadership roles.</p>
+<form class="flex flex-col md:flex-row gap-4 mb-12">
+<input class="flex-grow bg-surface-container-high border-none text-on-surface font-label text-xs uppercase tracking-widest px-6 py-4 focus:ring-1 focus:ring-primary" placeholder="OPERATOR_EMAIL@HOST.COM" type="email"/>
+<button class="bg-primary text-on-primary font-bold uppercase tracking-[0.2em] text-[10px] px-10 py-4 hover:bg-primary-container transition-all">Subscribe_Log</button>
+</form>
+<div class="flex justify-center gap-12">
+<a class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span> Contact.Direct
+                    </a>
+<a class="flex items-center gap-2 font-label text-xs uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">terminal</span> Terminal.Access
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/10 dark:border-slate-800/10 tonal-shift bg-slate-100/50 dark:bg-slate-900/50 flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6">
+<div class="font-mono text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-600">
+            © 2024 ARCHITECT_OS // ALL SYSTEMS OPERATIONAL
+        </div>
+<div class="flex gap-8">
+<a class="font-mono text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-600 hover:text-sky-400 dark:hover:text-sky-300 transition-all" href="#">GitHub</a>
+<a class="font-mono text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-600 hover:text-sky-400 dark:hover:text-sky-300 transition-all" href="#">LinkedIn</a>
+<a class="font-mono text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-600 hover:text-sky-400 dark:hover:text-sky-300 transition-all" href="#">Source</a>
+<a class="font-mono text-[10px] uppercase tracking-widest text-slate-400 dark:text-slate-600 hover:text-sky-400 dark:hover:text-sky-300 transition-all" href="#">RSS</a>
+</div>
+</footer>
+</body></html>
