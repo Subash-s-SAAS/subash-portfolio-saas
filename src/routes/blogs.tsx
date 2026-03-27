@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/gallery")({
+export const Route = createFileRoute("/blogs")({
   head: () => ({
     meta: [
       {
-        title: "Gallery | Subash Thatheuse",
+        title: "Blogs | Subash Thatheuse",
       },
     ],
   }),
@@ -12,5 +12,5 @@ export const Route = createFileRoute("/gallery")({
 });
 
 function RouteComponent() {
-  return <div>Hello "/gallery"!</div>;
+  return <div>Hello "/blog"!</div>;
 }

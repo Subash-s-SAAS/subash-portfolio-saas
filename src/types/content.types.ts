@@ -16,6 +16,17 @@ export type Page={
 	title:string;
 	link:string;
 }
+export type Experience={
+	timeFrame: string;
+    position: string;
+    organization: string;
+    description:string;
+    techs:string[];
+}
+export type ExperienceSection={
+	title:string;
+	experiences:Experience[]
+}
 export type HeroSection = {
 	chip: {
 		label: string;

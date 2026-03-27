@@ -1,6 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Experience, Hero, Projects, TechnicalBlogs } from "@/components/home";
-export const Route = createFileRoute("/")({ component: App });
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      {
+        title: "Home | Subash Thatheuse",
+      },
+    ],
+  }),
+  component: App,
+});
 
 function App() {
   return (
