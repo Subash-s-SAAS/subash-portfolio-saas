@@ -33,10 +33,14 @@ export default function Header() {
           <Link
             key={page.link}
             to={page.link}
-            className="font-headline tracking-tight font-bold uppercase text-xs text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
+            className="font-headline tracking-tight font-bold uppercase text-xs  dark:hover:text-slate-100 transition-colors"
             activeProps={{
               className:
                 " text-sky-600 dark:text-sky-400 border-b-2 border-sky-600 dark:border-sky-400 pb-1",
+            }}
+            inactiveProps={{
+              className:
+                "text-slate-500 dark:text-slate-400 hover:text-slate-900",
             }}
           >
             {page.name}
