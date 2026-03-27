@@ -9,6 +9,8 @@ export type Person = {
 	email: string;
 	location: string;
 	languages: string[];
+	short_description:string;
+	description:string;
 };
 export type HeroSection = {
 	chip: {
