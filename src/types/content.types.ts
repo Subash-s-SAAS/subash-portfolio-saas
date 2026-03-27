@@ -12,6 +12,10 @@ export type Person = {
 	short_description:string;
 	description:string;
 };
+export type Page={
+	title:string;
+	link:string;
+}
 export type HeroSection = {
 	chip: {
 		label: string;

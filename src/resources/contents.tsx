@@ -1,4 +1,4 @@
-import type { HeroSection, HomePage, Person } from "@/types";
+import type { HeroSection, HomePage, Page, Person } from "@/types";
 
 export const person: Person = {
   firstName: "Subash",
@@ -13,6 +13,24 @@ export const person: Person = {
   description:
     "Fullstack Software Engineer specializing in building scalable cloud engines and high-performance UI frameworks. Engineering digital architecture with precision and intent.",
 };
+export const pages: Page[] = [
+  {
+    title: "Home",
+    link: "/",
+  },
+  {
+    title: "Projects",
+    link: "/projects",
+  },
+  {
+    title: "Blog",
+    link: "/blog",
+  },
+  {
+    title: "Gallery",
+    link: "/gallery",
+  },
+];
 const hero: HeroSection = {
   chip: {
     label: "Featured work",

@@ -1,27 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import ThemeToggle from "./ThemeToggle";
+import { pages } from "@/resources";
 
-const pages = [
-  {
-    name: "Home",
-
-    link: "/",
-  },
-  {
-    name: "Projects",
-
-    link: "/projects",
-  },
-  {
-    name: "Blog",
-
-    link: "/blog",
-  },
-  {
-    name: "Gallery",
-    link: "/gallery",
-  },
-];
 export default function Header() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-surface-container-lowest backdrop-blur-xl border-b border-slate-200/15 dark:border-slate-800/15 grid grid-cols-3 md:grid-cols-4 items-center gap-4 px-8 py-4 max-w-full">
@@ -43,7 +23,7 @@ export default function Header() {
                 "text-slate-500 dark:text-slate-400 hover:text-slate-900",
             }}
           >
-            {page.name}
+            {page.title}
           </Link>
         ))}
       </div>

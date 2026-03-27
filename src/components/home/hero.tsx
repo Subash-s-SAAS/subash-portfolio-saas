@@ -20,10 +20,10 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-primary-container text-on-primary-container px-8 py-4 font-label font-bold uppercase tracking-widest text-sm rounded-none hover:brightness-110 transition-all shadow-xl shadow-primary-container/20">
-                Build System
+                Download Resume
               </button>
               <button className="border border-outline text-on-surface px-8 py-4 font-label font-bold uppercase tracking-widest text-sm rounded-none hover:bg-surface-container-high transition-all">
-                View Documentation
+                View My Works
               </button>
             </div>
           </div>
