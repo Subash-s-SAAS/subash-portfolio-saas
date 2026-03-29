@@ -9,24 +9,30 @@ export type Person = {
 	email: string;
 	location: string;
 	languages: string[];
-	short_description:string;
-	description:string;
+	short_description: string;
+	description: string;
 };
-export type Page={
-	title:string;
-	link:string;
-}
-export type Experience={
+export type Page = {
+	title: string;
+	link: string;
+};
+export type Experience = {
 	timeFrame: string;
-    position: string;
-    organization: string;
-    description:string;
-    techs:string[];
-}
-export type ExperienceSection={
-	title:string;
-	experiences:Experience[]
-}
+	position: string;
+	organization: string;
+	description: string;
+	techs: string[];
+};
+export type ExperienceSection = {
+	title: string;
+	experiences: Experience[];
+};
+
+export type Footer = {
+	copyright: string;
+	socials: Page[];
+};
+
 export type HeroSection = {
 	chip: {
 		label: string;

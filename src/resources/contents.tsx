@@ -1,6 +1,8 @@
+import type { title } from "node:process";
 import type {
   Experience,
   ExperienceSection,
+  Footer,
   HeroSection,
   HomePage,
   Page,
@@ -69,6 +71,25 @@ export const experienceSection: ExperienceSection = {
   title: "work_history",
   experiences,
 };
+
+export const footer: Footer = {
+  copyright: "© 2020 // ALL SYSTEMS OPERATIONAL",
+  socials: [
+    {
+      title: "Github",
+      link: "https://github.com/subashf23s",
+    },
+    {
+      title: "LinkedIn",
+      link: "https://linkedin.com/in/subash-thatheuse",
+    },
+    {
+      title: "Email",
+      link: "mailto:subashsuni55@gmail.com",
+    },
+  ],
+};
+
 const hero: HeroSection = {
   chip: {
     label: "Featured work",
