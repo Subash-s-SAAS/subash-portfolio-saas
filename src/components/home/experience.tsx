@@ -1,5 +1,6 @@
 import { SquareTerminal } from "lucide-react";
-import { experienceSection } from "@/resources";
+import { experienceSection, techSection } from "@/resources";
+
 const Experience = () => {
   return (
     <section className="py-32 bg-surface-container-low" id="experience">
@@ -18,6 +19,7 @@ const Experience = () => {
                       {experience.timeFrame}
                     </span>
                     <h3 className="font-headline text-2xl font-bold">
+                      {/** biome-ignore lint/suspicious/noCommentText: <explanation> */}
                       {experience.position} // {experience.organization}
                     </h3>
                   </div>
@@ -45,82 +47,28 @@ const Experience = () => {
                 <SquareTerminal className="text-primary-fixed" />
 
                 <h3 className="font-label uppercase tracking-widest font-bold text-sm">
-                  System_Manifest
+                  {techSection.title}
                 </h3>
               </div>
               <div className="space-y-10">
-                <div>
-                  <h4 className="font-label text-[10px] tracking-[0.3em] uppercase mb-4 opacity-60">
-                    FRONTEND_CORE
-                  </h4>
-                  <ul className="grid grid-cols-2 gap-y-2 font-body text-sm font-medium">
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      React &amp; Next.js
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      TanStack Query
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      TailwindCSS
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      Shadcn/UI
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-label text-[10px] tracking-[0.3em] uppercase mb-4 opacity-60">
-                    BACKEND_CLOUD
-                  </h4>
-                  <ul className="grid grid-cols-2 gap-y-2 font-body text-sm font-medium">
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      Node.js
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      AWS Infrastructure
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      Supabase / SQL
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      Redis / Caching
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-label text-[10px] tracking-[0.3em] uppercase mb-4 opacity-60">
-                    DEV_ENVIRONMENT
-                  </h4>
-                  <ul className="grid grid-cols-2 gap-y-2 font-body text-sm font-medium">
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      GitHub / GitLab
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      VS Code Engine
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      Docker / K8s
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
-                      CI/CD Pipelines
-                    </li>
-                  </ul>
-                </div>
+                {techSection.techs.map((tech) => (
+                  <div key={tech.title}>
+                    <h4 className="font-label text-[10px] tracking-[0.3em] uppercase mb-4 opacity-60">
+                      {tech.title}
+                    </h4>
+                    <ul className="grid grid-cols-2 gap-y-2 font-body text-sm font-medium">
+                      {tech.items.map((item) => (
+                        <li className="flex items-center gap-2" key={item}>
+                          <span className="w-1.5 h-1.5 bg-primary-container"></span>{" "}
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
               <div className="mt-12 pt-8 border-t border-primary-fixed/20 text-[10px] font-label opacity-40 uppercase tracking-widest">
-                VER: 2.4.0-STABLE // BUILD_SUCCESS
+                {techSection.version}
               </div>
             </div>
           </div>

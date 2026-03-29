@@ -1,4 +1,3 @@
-import type { title } from "node:process";
 import type {
   Experience,
   ExperienceSection,
@@ -7,6 +6,7 @@ import type {
   HomePage,
   Page,
   Person,
+  TechSection,
 } from "@/types";
 
 export const person: Person = {
@@ -43,7 +43,7 @@ export const pages: Page[] = [
 
 export const experiences: Experience[] = [
   {
-    timeFrame: "2021 — PRESENT",
+    timeFrame: "2024 — PRESENT",
     position: "Senior Software Engineer",
     organization: "Litmus7",
     description:
@@ -51,7 +51,7 @@ export const experiences: Experience[] = [
     techs: ["React", "Next.js", "AWS"],
   },
   {
-    timeFrame: "2019 — 2022",
+    timeFrame: "2022 — 2024",
     position: "Software Engineer",
     organization: "Gadgeon",
     description:
@@ -59,8 +59,16 @@ export const experiences: Experience[] = [
     techs: ["React", "Next.js", "AWS"],
   },
   {
+    timeFrame: "2020-2022",
+    position: "Member of Technical team",
+    organization: "OBO Technology",
+    description:
+      "Foundational engineering work on internal tooling and client-facing web applications using modern JavaScript ecosystems.",
+    techs: ["React", "Next.js", "AWS"],
+  },
+  {
     timeFrame: "early career",
-    position: "Software Developer",
+    position: "Technical Trainee",
     organization: "OBO Technology",
     description:
       "Foundational engineering work on internal tooling and client-facing web applications using modern JavaScript ecosystems.",
@@ -72,6 +80,31 @@ export const experienceSection: ExperienceSection = {
   experiences,
 };
 
+export const techSection: TechSection = {
+  title: "SYSTEM_MANIFEST",
+  techs: [
+    {
+      title: "FRONTEND_CORE",
+      items: [
+        "React",
+        "Next.js",
+        "Tanstack Start",
+        "Angualr",
+        "Tailwindcss",
+        "shadcn/ui",
+      ],
+    },
+    {
+      title: "BACKEND_CLOUD",
+      items: ["Node JS", "AWS", "Sanity CMS", "Supabase", "PostgreSQL"],
+    },
+    {
+      title: "DEV_ENVIRONMENT",
+      items: ["GitHub", "GitLab", "VsCode", "AWS Infrastructure", "Vercel"],
+    },
+  ],
+  version: "VER: 2.4.0-STABLE // BUILD_SUCCESS",
+};
 export const footer: Footer = {
   copyright: "© 2020 // ALL SYSTEMS OPERATIONAL",
   socials: [

@@ -32,6 +32,11 @@ export type Footer = {
 	copyright: string;
 	socials: Page[];
 };
+export type TechSection = {
+	title: string;
+	techs: { title: string; items: string[] }[];
+	version: string;
+};
 
 export type HeroSection = {
 	chip: {
