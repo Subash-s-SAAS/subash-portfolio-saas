@@ -37,6 +37,21 @@ export type TechSection = {
 	techs: { title: string; items: string[] }[];
 	version: string;
 };
+export type Project = {
+	title: string;
+	description: string;
+	techs: string[];
+	imgUrl: string;
+	imgAlt: string;
+	btnLabel: string;
+	btnLink: string;
+};
+export type ProjectSection = {
+	title: string;
+	description: string;
+	info: string;
+	projects: Project[];
+};
 
 export type HeroSection = {
 	chip: {

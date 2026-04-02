@@ -6,6 +6,7 @@ import type {
   HomePage,
   Page,
   Person,
+  ProjectSection,
   TechSection,
 } from "@/types";
 
@@ -104,6 +105,36 @@ export const techSection: TechSection = {
     },
   ],
   version: "VER: 2.4.0-STABLE // BUILD_SUCCESS",
+};
+export const projectSection: ProjectSection = {
+  title: "PRODUCTION_BUILDS",
+  description:
+    "Highlighting core architectural contributions and independent software frameworks.",
+  info: "SCROLL TO EXPLORE [01-02]",
+  projects: [
+    {
+      title: "React UI Library",
+      description:
+        "React-based component library specifically engineered for high-density financial data visualization.",
+      techs: ["React", "Next.js", "AWS"],
+      imgUrl: "./img/projects/ui_library.png",
+      imgAlt:
+        "Modern clean e-commerce dashboard interface with intricate data charts, minimalist aesthetic, and high-tech corporate blue color scheme",
+      btnLabel: "SOURCE_CODE",
+      btnLink: "https://www.npmjs.com/package/subash-ui",
+    },
+    {
+      title: "OpenMenu",
+      description:
+        "A high-performance headless commerce backbone optimized for sub-100ms API responses.",
+      techs: ["React", "Next.js", "AWS"],
+      imgUrl: "./img/projects/open_menu.png",
+      imgAlt:
+        "Complex data visualization screen with neon accents and dark technical graphs, clean typography, and professional financial layout",
+      btnLabel: "VIEW_DEMO",
+      btnLink: "https://talvad-mymenu.vercel.app/",
+    },
+  ],
 };
 export const footer: Footer = {
   copyright: "© 2020 // ALL SYSTEMS OPERATIONAL",

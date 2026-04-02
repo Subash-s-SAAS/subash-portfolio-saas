@@ -74,7 +74,7 @@ export default function ThemeToggle() {
       onClick={toggleMode}
       aria-label={label}
       title={label}
-      className="p-2 bg-slate-100 dark:bg-slate-800/50 rounded-lg transition-all active:scale-95"
+      className="p-2 bg-surface-container-highest rounded-lg transition-all active:scale-95"
     >
       {mode === "auto"
         ? iconLibrary.moon({})

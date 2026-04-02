@@ -42,7 +42,7 @@ const Experience = () => {
           </div>
           {/* <!-- Right: Skills & Tech Stack --> */}
           <div className="lg:col-span-5">
-            <div className="bg-inverse-surface p-10 text-primary-fixed rounded-lg sticky top-32 shadow-2xl">
+            <div className="bg-on-primary-fixed p-10 text-primary-fixed rounded-lg sticky top-32 shadow-2xl">
               <div className="flex items-center gap-3 mb-8 border-b border-primary-fixed/20 pb-4">
                 <SquareTerminal className="text-primary-fixed" />
 
