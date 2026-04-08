@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { MoveRight } from "lucide-react";
 import { projectSection } from "@/resources";
 
@@ -75,6 +76,15 @@ const Projects = () => {
             </a>
           ))}
         </div>
+      </div>
+      <div className="grid place-content-center py-8">
+        <Link
+          to="/projects"
+          className="group flex items-center gap-4 font-label text-[10px] uppercase tracking-widest ps-4 pe-6 py-2 border border-outline-variant rounded-full hover:bg-primary hover:text-white transition-all"
+        >
+          View All Projects{" "}
+          <MoveRight className="text-primary-container group-hover:text-white group-hover:translate-x-2 transition-all" />
+        </Link>
       </div>
     </section>
   );

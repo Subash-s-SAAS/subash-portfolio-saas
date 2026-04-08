@@ -107,7 +107,7 @@ export const techSection: TechSection = {
   version: "VER: 2.4.0-STABLE // BUILD_SUCCESS",
 };
 export const projectSection: ProjectSection = {
-  title: "PRODUCTION_BUILDS",
+  title: "PROD_BUILDS",
   description:
     "Highlighting core architectural contributions and independent software frameworks.",
   info: "SCROLL TO EXPLORE [01-02]",

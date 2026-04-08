@@ -47,6 +47,15 @@ const TechnicalBlogs = () => {
           ))}
         </div>
       </div>
+      <div className="grid place-content-center pt-8">
+        <Link
+          to="/blogs"
+          className="group flex items-center gap-4 font-label text-[10px] uppercase tracking-widest ps-4 pe-6 py-2 border border-outline-variant rounded-full hover:bg-primary hover:text-white transition-all"
+        >
+          View All Blogs{" "}
+          <MoveRight className="text-primary-container group-hover:text-white group-hover:translate-x-2 transition-all" />
+        </Link>
+      </div>
     </section>
   );
 };

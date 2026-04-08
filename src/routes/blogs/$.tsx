@@ -29,7 +29,7 @@ function RouteComponent() {
   }
   return (
     <main className="page-wrap px-4 md:px-8 py-16 min-h-dvh">
-      <article className="prose-ui">
+      <article className="prose-ui bg-red-500">
         <MDXContent code={page.mdx} components={mdxComponents} />
       </article>
     </main>
