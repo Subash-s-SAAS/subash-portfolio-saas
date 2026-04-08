@@ -28,7 +28,7 @@ function RouteComponent() {
     throw notFound();
   }
   return (
-    <main className="page-wrap px-0 md:px-4 pb-8 mt-20 min-h-dvh">
+    <main className="page-wrap px-4 md:px-8 py-16 min-h-dvh">
       <article className="prose-ui">
         <MDXContent code={page.mdx} components={mdxComponents} />
       </article>

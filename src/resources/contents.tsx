@@ -136,6 +136,11 @@ export const projectSection: ProjectSection = {
     },
   ],
 };
+export const techBlogSection = {
+  title: "TECH_BLOGS",
+  description:
+    "Thoughts on system design, performance optimization, and the evolution of the modern web architecture.",
+};
 export const footer: Footer = {
   copyright: "© 2020 // ALL SYSTEMS OPERATIONAL",
   socials: [

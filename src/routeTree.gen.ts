@@ -11,7 +11,6 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogsIndexRouteImport } from './routes/blogs/index'
 import { Route as BlogsSplatRouteImport } from './routes/blogs/$'
@@ -24,11 +23,6 @@ const ProjectsRoute = ProjectsRouteImport.update({
 const GalleryRoute = GalleryRouteImport.update({
   id: '/gallery',
   path: '/gallery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -49,7 +43,6 @@ const BlogsSplatRoute = BlogsSplatRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/gallery': typeof GalleryRoute
   '/projects': typeof ProjectsRoute
   '/blogs/$': typeof BlogsSplatRoute
@@ -57,7 +50,6 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/gallery': typeof GalleryRoute
   '/projects': typeof ProjectsRoute
   '/blogs/$': typeof BlogsSplatRoute
@@ -66,7 +58,6 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
   '/gallery': typeof GalleryRoute
   '/projects': typeof ProjectsRoute
   '/blogs/$': typeof BlogsSplatRoute
@@ -74,22 +65,14 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/gallery' | '/projects' | '/blogs/$' | '/blogs/'
+  fullPaths: '/' | '/gallery' | '/projects' | '/blogs/$' | '/blogs/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/gallery' | '/projects' | '/blogs/$' | '/blogs'
-  id:
-    | '__root__'
-    | '/'
-    | '/about'
-    | '/gallery'
-    | '/projects'
-    | '/blogs/$'
-    | '/blogs/'
+  to: '/' | '/gallery' | '/projects' | '/blogs/$' | '/blogs'
+  id: '__root__' | '/' | '/gallery' | '/projects' | '/blogs/$' | '/blogs/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
   GalleryRoute: typeof GalleryRoute
   ProjectsRoute: typeof ProjectsRoute
   BlogsSplatRoute: typeof BlogsSplatRoute
@@ -110,13 +93,6 @@ declare module '@tanstack/react-router' {
       path: '/gallery'
       fullPath: '/gallery'
       preLoaderRoute: typeof GalleryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -145,7 +121,6 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
   GalleryRoute: GalleryRoute,
   ProjectsRoute: ProjectsRoute,
   BlogsSplatRoute: BlogsSplatRoute,
